@@ -17,6 +17,8 @@ devices[0]
  - experiment: Declare a constant `favoriteDevice` and set its value to “iPod” by using an index into the `devices` array.
  */
 // Declare favoriteDevice below
+let favoriteDevice = ["Galaxy","iPhone", "iPad", "iPod", "iMac"]
+favoriteDevice[2]
 
 /*:
  Getting a value using the index has to be done carefully. If you ask for an item that is not in the list, you can cause a serious program error. It would be like telling someone to walk 100 feet down a dock that's only 50 feet long. If the person followed your instructions as strictly as a program executes your code, they'd end up walking right into the water.
@@ -28,3 +30,4 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+favoriteDevice[4]

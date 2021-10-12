@@ -23,12 +23,16 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 
 
+
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
+
+    
 
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
+
 
 
 
@@ -51,4 +55,43 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 
 
+
+
+
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+//ex1
+var countyes = 0
+var countno = 0
+
+//ex2
+for vote in shouldMascotChangeVotes{
+    if vote{
+        countyes += 1
+    }
+        else{
+            countno += 1
+        }
+    }
+
+//ex3
+if countyes > countno {
+    
+    print("the vote passed")
+    }
+        else{
+            print("the vote failed")
+        }
+
+//ex4
+var countyes1 = 0
+var countno1 = 0
+
+for vote in shouldHaveMorePollOptionsVotes{
+    if vote{
+        countyes1 += 1
+    }
+        else{
+            countno1 += 1
+        }
+    }
+

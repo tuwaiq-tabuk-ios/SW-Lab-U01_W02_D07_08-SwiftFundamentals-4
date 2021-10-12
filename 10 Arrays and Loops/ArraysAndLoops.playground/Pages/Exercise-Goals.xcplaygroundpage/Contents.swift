@@ -17,3 +17,26 @@ Think of a goal of yours that can be measured in progress every day, whether itâ
 
 
 //: [Previous](@previous)  |  page 16 of 17  |  [Next: Exercise: Screening Messages](@next)
+//ex1
+let milesBiked:[Double] = [3, 7.5, 0, 10,14, 17,20,23,25,28 ,30]
+milesBiked.count
+let myDailygoal = 21.0
+
+
+//ex2
+func daliyGoal(MyGoal:Double) -> String{
+    
+    if MyGoal >= myDailygoal{
+        return "Good job"
+    }
+    else{
+        return "Close"
+        
+    }
+}
+//ex3
+for number1 in milesBiked {
+    
+    print(daliyGoal(MyGoal: number1))
+    
+}

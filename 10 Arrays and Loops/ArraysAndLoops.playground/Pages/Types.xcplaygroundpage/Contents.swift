@@ -24,5 +24,19 @@ let someRating = starRatings[0]
 var anotherGrade = grades[1]
 
 
+
+
 //: Next, learn how to work through the values in an array.\
 //: [Previous](@previous)  |  page 5 of 17  |  [Next: Processing Arrays](@next)
+//ex1
+//let grades: [String]
+//let starRatings: [Int]
+
+
+//ex2
+//let someGrade: String
+//let someRating: Int
+
+//ex3
+
+var aanotherGrade = grades[4]
