@@ -21,6 +21,7 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  */
 // Define highScores array below
 
+
 /*:
 
  
@@ -28,3 +29,10 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  
 [Previous](@previous)  |  page 2 of 17  |  [Next: Indices](@next)
 */
+
+//experiment
+let appleDevices = ["MacBook", "iMac","iPhone", "iPad", "iPod"]
+
+
+//experiment2
+let highScore = [1,2,3,4,5,6,7,8,9,10]

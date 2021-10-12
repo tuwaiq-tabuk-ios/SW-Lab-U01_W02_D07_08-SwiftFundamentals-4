@@ -52,3 +52,63 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+//Exercise1
+print("----Exercise 1----")
+
+var yesVotes = 0
+var noVotes = 0
+
+
+//Exercise2
+print("----Exercise 2----")
+for vote in shouldMascotChangeVotes {
+  if vote {
+    yesVotes += 1
+  } else {
+    noVotes += 1
+  }
+}
+shouldMascotChangeVotes.count
+
+
+//Exercise3
+print("----Exercise 3 -----")
+if yesVotes > noVotes {
+  print("Passed")
+}else {
+  print("Failled")
+}
+//Exercise4
+print("----Exercise 4 ----")
+for vote in shouldMascotChangeVotes {
+  if vote {
+    yesVotes += 1
+  } else {
+    noVotes += 1
+  }
+  
+}
+
+
+//Exercise5
+print("----Exercise 5 ----")
+func printResults(forIssue:String, withVotes:[Bool]){
+  var countYes = 0
+  var countNo = 0
+  for vote in withVotes {
+    if vote {
+      countNo += 1
+    } else {
+      countYes += 1
+  }
+}
+  print("\(forIssue) \(countYes) Yes \(countNo) No")
+    
+  
+}
+
+printResults(forIssue: "Should we change the mascot?", withVotes:shouldMascotChangeVotes)
+printResults(forIssue: "Should we change the mascot?", withVotes:shouldHaveMorePollOptionsVotes)
+printResults(forIssue: "Should we change the mascot?", withVotes:shouldInstallCoffeeVendingMachineVotes)
+
+

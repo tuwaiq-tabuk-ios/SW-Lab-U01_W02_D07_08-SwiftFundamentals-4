@@ -28,3 +28,16 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+let favoriteDevice = ["iPhone", "iPad", "iPod", "iMac"]
+
+favoriteDevice [2]
+
+
+
+//favoriteDevice [4]
+//Here I have an error when I call Index [4] its because there is no Index number 4 in the array
+//Here below I will call it again but first I will make a new constant with Index number 4
+let favoriteDevice2 = ["iPhone", "iPad", "iPod", "iMac","MacBook Air"]
+
+favoriteDevice2 [4]
+
