@@ -31,3 +31,18 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+
+
+// Q1
+var flavors2 = ["Chocolate", "Vanilla", "Strawberry", "Ice cream", "Rocky Road"]
+print("Third element: \(flavors2[3])")
+print("Count: \(flavors2.count)")
+
+// Q2
+// The Highest number is 4
+// Because the array has 5 elements
+flavors2[4] = "Maple Walnut"
+ 
+print("Count: \(flavors2.count)")
+
+

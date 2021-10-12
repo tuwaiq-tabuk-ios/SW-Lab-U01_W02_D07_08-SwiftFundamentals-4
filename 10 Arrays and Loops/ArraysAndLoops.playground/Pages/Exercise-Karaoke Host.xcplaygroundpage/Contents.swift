@@ -40,3 +40,24 @@
 
 
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+// Q1
+var karaoke = [String]()
+karaoke.append("song1")
+karaoke.append("song2")
+karaoke.append("song3")
+karaoke.append("song4")
+
+// Q2
+
+
+karaoke += ["songfrst","songsaknd","songtherd" ]
+
+// Q3
+ 
+for song in karaoke {
+  print("turn \(song)")
+}
+
+// Q4
+karaoke.removeAll()
+print(karaoke)
