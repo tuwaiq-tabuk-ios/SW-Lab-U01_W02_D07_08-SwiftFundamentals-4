@@ -9,7 +9,6 @@ Think of a goal of yours that can be measured in progress every day, whether itâ
 //: - callout(Exercise): Write a function that takes the daily number as an argument and returns a message as a string. It should return a different message based on how close the number comes to your goal. You can be as ambitious and creative as you'd like with your responses, but make sure to return at least two different messages depending on your daily progress!
 
 
-
 //: - callout(Exercise): Write a `forâ€¦in` loop that loops over your sample data, calls your function to get an appropriate message for each item, and prints the message to the console.
 
 
@@ -17,3 +16,26 @@ Think of a goal of yours that can be measured in progress every day, whether itâ
 
 
 //: [Previous](@previous)  |  page 16 of 17  |  [Next: Exercise: Screening Messages](@next)
+//Exercise1
+let milesBiked = [3,5,2,18,33,28,24,9,6,17,11,8]
+milesBiked.count
+//Exercise2
+func dailyProgress(dailyNumber:Int)->String {
+  let dailyGoal = 10
+  if dailyNumber == dailyGoal{
+    return "Good Sleep , Perfect !!"
+  }
+  else if dailyNumber < dailyGoal {
+    return"Not Good , Need more sleep"
+  }
+  else {
+    return "You not sleep"
+  }
+}
+
+//Exercise3
+for dailyValue in milesBiked {
+  let daliyMassage = dailyProgress(dailyNumber:dailyValue)
+  print(daliyMassage)
+}
+
