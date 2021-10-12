@@ -9,17 +9,10 @@
  Create an empty array to hold song titles as strings, and use the `append` method to add three or four songs one at a time.
  */
 
-
-
-
 /*:
  - callout(Exercise):
  One enthusiastic singer wants to add three songs at once. Create an array holding this one singer's song list and use the `+=` operator to append their whole list to the end of the group's song list.
  */
-
-
-
-
 
 /*:
  - callout(Exercise):
@@ -27,16 +20,34 @@
  */
 
 
-
-
-
-
 /*:
  - callout(Exercise):
  After the loop has called everyone up to sing, use the `removeAll` method on the song list to clear out all the past songs.
  */
 
-
-
-
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+print("\n\n- - - - - Exercice1 - - - - -")
+var songsList = [String]()
+songsList.append("See you again")
+songsList.append("Hello")
+songsList.append("Stay")
+
+
+print("\n\n- - - - - Exercice2 - - - - -")
+
+songsList += ["Unstoppable","Chandelier","The Greatest"]
+
+
+print(songsList)
+
+
+print("\n\n- - - - - Exercice3 - - - - -")
+for songsList in songsList {
+
+    print( "it's your turn \(songsList) " )
+}
+
+
+
+print("\n\n- - - - - Exercice4 - - - - -")
+songsList.removeAll()
