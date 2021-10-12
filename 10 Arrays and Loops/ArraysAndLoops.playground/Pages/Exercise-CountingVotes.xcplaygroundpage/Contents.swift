@@ -5,7 +5,7 @@
  
  This is a lot of data! But don't worry too much about the long arrays. Whether you're planning to loop over two items or two thousand, you’ll write the loop in exactly the same way.
  */
-let shouldMascotChangeVotes: [Bool] = [false, false, false, true, false, true, true, true, false, true, true, true, true, false, true, true, false, true, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true, false, false, true, true, false, false, true, true, true, false, true, false, true, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, false, true, true, true, false, true, true, false, false, true, false, true, true, false, false, false, true, false, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, true, true, true, false, true, true, false, true, true, true, true, true, true, true, false, true, true, false, true, true, false, true, true, true, true, true, false, false, false, false, true, true, true, false, true, true, false, false, true, false, false, true, true, true, true, false, true, true, true, true, false, true, true, false, true, false, false, true, true, false, true, false, false, false, true, false, false, false, true, false, true, true, false, true, true, false, true, true, true, false, false, false, true, false, true, false, true, true, true, true, false, true, false, false, true, true, true, true, true, false]
+let shouldMascotChangeVotes: [Bool] = [true, false, false, true, false, true, true, true, false, true, true, true, true, false, true, true, false, true, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true, false, false, true, true, false, false, true, true, true, false, true, false, true, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, false, true, true, true, false, true, true, false, false, true, false, true, true, false, false, false, true, false, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, true, true, true, false, true, true, false, true, true, true, true, true, true, true, false, true, true, false, true, true, false, true, true, true, true, true, false, false, false, false, true, true, true, false, true, true, false, false, true, false, false, true, true, true, true, false, true, true, true, true, false, true, true, false, true, false, false, true, true, false, true, false, false, false, true, false, false, false, true, false, true, true, false, true, true, false, true, true, true, false, false, false, true, false, true, false, true, true, true, true, false, true, false, false, true, true, true, true, true, false]
 
 let shouldInstallCoffeeVendingMachineVotes: [Bool] = [true, true, false, false, false, true, true, false, true, true, true, true, false, true, false, false, true, false, true, false, true, true, false, false, false, false, false, true, true, true, false, false, true, true, false, true, true, true, true, false, true, false, true, true, false, false, false, false, false, false, true, false, true, true, false, true, true, true, true, false, false, true, true, false, false, false, false, true, true, false, false, true, true, true, true, false, false, true, true, false, true, false, true, false, true, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, true, false, false, true, true, false, true, false, true, true, true, false, false, false, false, false, false, true, true, false, false, true, true, true, true, true, true, false, false, false, true, true, true, true, false, false, false, true, true, false, true, true, true, false, false, true, false, true, false, true, false, false, true, false, true, true, true, true, true, true, true, false, true, false, true, true, false, false, true, false, false, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false, true, true, false, false, false, true]
 
@@ -20,11 +20,29 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 //:
 
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
-
+//var countYes = 0
+//var countNo = 0
+//for count in shouldInstallCoffeeVendingMachineVotes {
+//
+//  if (count == true){
+//    countYes+=1
+//  }
+//  else{
+//    countNo = countNo+1
+//  }
+//}
 
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
+//if (countNo>countYes){
+//  print ("The majority vote to No")
+//}
+//else if (countNo>countYes){
+//  print ("The votes to Yes")
+//}
+//else{
+//  print ("The number of votes are equal  ")
+//}
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
@@ -47,8 +65,47 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 // Add your vote-processing function here:
 
 
+func countVotes (nameOfArray:[Bool])->(countYes: Int, countNo: Int){
+  var countYes = 0
+  var countNo = 0
+  for count in nameOfArray {
+
+    if (count == true){
+      countYes+=1
+    }
+    else{
+      countNo+=1
+    }
+
+  }
+//compareVotes(numberOfYes: countYes, numberOfNo: countNo)
+return (countNo,countYes)
+}
+func compareVotes(numberOfYes:Int, numberOfNo:Int){
+  if (numberOfNo>numberOfYes){
+    print ("The majority votes to No")
+  }
+  else if (numberOfNo<numberOfYes){
+    print ("The majority votes to Yes")
+  }
+  else{
+    print ("The number of votes of  are equal  ")
+  }
+}
+let (noVotesCount, yesVotesCount) = countVotes(nameOfArray: shouldMascotChangeVotes) //
+print("Should we change the mascot?", "yes:", yesVotesCount, "no: ", noVotesCount)
+compareVotes(numberOfYes: yesVotesCount, numberOfNo: noVotesCount)
+let (noVotesCount1, yesVotesCount1) = countVotes(nameOfArray: shouldInstallCoffeeVendingMachineVotes) //
+print("Should we install coffee vending machine?", "yes:", yesVotesCount1, "no: ", noVotesCount1)
+compareVotes(numberOfYes: yesVotesCount1, numberOfNo: noVotesCount1)
+let (noVotesCount2, yesVotesCount2) = countVotes(nameOfArray: shouldHaveMorePollOptionsVotes) //
+print("Should we have more poll option?", "yes:", yesVotesCount2, "no: ", noVotesCount2)
+compareVotes(numberOfYes: yesVotesCount2, numberOfNo: noVotesCount2)
 
 
 
 
-//: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+
+
+
+

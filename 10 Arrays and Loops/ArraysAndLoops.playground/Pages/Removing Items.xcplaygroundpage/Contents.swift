@@ -24,3 +24,12 @@ numbers
 
 //: Next learn about replacing items in a mutable array.\
 //: [Previous](@previous)  |  page 10 of 17  |  [Next: Replacing Items](@next)
+var letters = ["A","B","C","D","E","F"]
+let someLetters = letters.remove(at: 3)
+letters
+let firstLetters = letters.removeFirst()
+letters
+let lastLetters = letters.removeLast()
+letters
+letters.removeAll()
+letters
