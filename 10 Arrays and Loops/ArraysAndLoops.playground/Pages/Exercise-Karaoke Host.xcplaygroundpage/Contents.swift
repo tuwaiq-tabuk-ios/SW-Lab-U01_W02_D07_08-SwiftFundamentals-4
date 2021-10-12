@@ -40,3 +40,24 @@
 
 
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+print("\n\n- - - - - Exercice1 - - - - -")
+
+var sonsList = [String]()
+sonsList.append("see you again")
+sonsList.append("Hello")
+sonsList.append("stay")
+
+print(sonsList)
+print("\n\n- - - - - Exercice2 - - - - -")
+
+sonsList += ["air", "wow", "horse"]
+
+print("\n\n- - - - - Exercice3 - - - - -")
+
+for sonsList in sonsList {
+  print("Next sons is: \(sonsList)")
+}
+
+print("\n\n- - - - - Exercice4 - - - - -")
+sonsList.removeAll()
+

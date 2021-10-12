@@ -16,9 +16,14 @@ list += ["Strawberry", "Plum", "Watermelon"]
 
 
 
-
-
-
-
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+list.append("red")
+
+list.insert("blue", at: 4)
+
+list += ["red", "white", "yellow", "blue"]
+// the all use
+//add an item at a specific index using the insert
+//add a single item using the append
+//append a whole array of items using the compound assignment operator +=

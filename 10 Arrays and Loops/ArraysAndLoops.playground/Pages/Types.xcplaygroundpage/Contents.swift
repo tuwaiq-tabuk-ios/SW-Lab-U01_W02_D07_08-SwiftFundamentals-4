@@ -26,3 +26,9 @@ var anotherGrade = grades[1]
 
 //: Next, learn how to work through the values in an array.\
 //: [Previous](@previous)  |  page 5 of 17  |  [Next: Processing Arrays](@next)
+//let someGrade = grades[0] (string)
+//let someRating = starRatings[0] (int)
+
+
+
+//var anotherGrade = grades[3]

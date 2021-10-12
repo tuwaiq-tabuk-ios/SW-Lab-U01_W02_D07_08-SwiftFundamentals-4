@@ -1,6 +1,6 @@
 //: ## Indices
 //: Here is an array of devices:
-let devices = ["iPhone", "iPad", "iPod", "iMac"]
+var devices = ["iPhone", "iPad", "iPod", "iMac"]
 /*:
  Use the Show Result button to view the result inline, like you did on the previous page. Each item in the array has a number next to it, starting at zero.
  
@@ -11,6 +11,7 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  Each item in an array has an index, starting with the first item at zero. You can get the value that's stored at a particular index by putting the index in square brackets after the array name:
 */
 // This gets the object at index 0
+
 devices[0]
 
 /*: 
@@ -28,3 +29,12 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+//devices[2]
+print("\n\n- - - - - Exercice1 - - - - -")
+print(devices[2])
+
+print("\n\n- - - - - Exercice2 - - - - -")
+
+devices.insert("macBook", at: 4)
+print(devices)
+print(devices[4])

@@ -49,6 +49,38 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 
 
-
-
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+func countVotes (nameOfArray:[Bool])->(countYes: Int, countNo: Int){
+  var countYas = 0
+  var countNo = 0
+  for count in nameOfArray {
+   
+    if (count == true){
+      countYas+=1
+    }
+    else{
+      countNo+=1
+    }
+    
+  }
+  //compereVotes(numberOfYes: countYas, numberofNo: countNo)
+  return (countNo,countYas)
+}
+func compareVotes(numberOfYes:Int, numberOfNo:Int){
+  if (numberOfNo>numberOfYes){
+    print("The majority votes to No")
+  }
+  else if (numberOfNo<numberOfYes){
+    print("The majority votes to Yes")
+  }
+}
+let (noVotesCount, yesVoteCount) = countVotes(nameOfArray: shouldMascotChangeVotes) //
+print("Should we change the mascot?", "yes:", yesVoteCount, "no: ", noVotesCount)
+compareVotes(numberOfYes: yesVoteCount, numberOfNo: noVotesCount)
+let (noVotesCount1, yesVotesCount1) = countVotes(nameOfArray: shouldHaveMorePollOptionsVotes) //
+print("Should we install coffee vending machine?", "yes:", yesVotesCount1, "no: ", noVotesCount1)
+compareVotes(numberOfYes: yesVotesCount1, numberOfNo: noVotesCount1)
+let (noVotesCount2, yesVotesCount2) = countVotes(nameOfArray: shouldHaveMorePollOptionsVotes) //
+print("should we have more poll option?", "yes:",yesVotesCount2, "no:", noVotesCount2)
+compareVotes(numberOfYes: yesVotesCount2, numberOfNo: noVotesCount2)
+
