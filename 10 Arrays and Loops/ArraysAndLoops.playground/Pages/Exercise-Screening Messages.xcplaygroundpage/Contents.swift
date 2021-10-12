@@ -6,9 +6,11 @@
  Try to print out the `aliceMessages` array to see the whole list, but beware: It's large enough that it may cause your playground to run slowly.
  */
 import Foundation
+import Darwin
 
-aliceMessages
+//aliceMessages
 
+var aliceMessages = ["Caterpillar", " Dormouse ","Cheshire Cat" ]
 
 /*:
  The Caterpillar has asked you to go through the messages and to relay any that contain the Caterpillar's name. Instead of reading all the text yourself, you decide to write more code to help.
@@ -23,6 +25,14 @@ If the message refers to the Caterpillar, print it to the console.
  */
 // Write the `for…in` loop here:
 
+for Animal  in aliceMessages
+{
+    
+    if  Animal  == "catterpillar"
+    {
+        print(Animal)
+    }
+}
 
 /*:
  
