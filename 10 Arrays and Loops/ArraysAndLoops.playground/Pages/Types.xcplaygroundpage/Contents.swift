@@ -7,8 +7,8 @@
  
  - callout(Exercise): Option-click on the two arrays below and look at their types
 */
-let grades = ["A", "B", "C", "D", "E"]
-let starRatings = [1, 2, 3, 4, 5]
+let grades = ["A", "B", "C", "D", "E"] //string
+let starRatings = [1, 2, 3, 4, 5] // int
 /*:
  The `[` and `]` brackets tell you that it's an array type. Between the brackets is the name of the type of elements the array holds.
  
@@ -22,7 +22,7 @@ let someRating = starRatings[0]
 //:
 //: - callout(Exercise): Try setting `anotherGrade` to a number. What happens?
 var anotherGrade = grades[1]
-
-
+var anotherGrade1 = grades[2]
+ 
 //: Next, learn how to work through the values in an array.\
 //: [Previous](@previous)  |  page 5 of 17  |  [Next: Processing Arrays](@next)

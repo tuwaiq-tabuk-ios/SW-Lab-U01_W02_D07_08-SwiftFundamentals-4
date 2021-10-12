@@ -7,7 +7,7 @@
  */
 import Foundation
 
-aliceMessages
+var aliceMessages = ["Caterpillar", "Dormouse", "CheshireCat"]
 
 
 /*:
@@ -23,7 +23,12 @@ If the message refers to the Caterpillar, print it to the console.
  */
 // Write the `for…in` loop here:
 
-
+for message in aliceMessages{
+    if message == "Caterpillar"{
+        print(message)
+    }
+    
+}
 /*:
  
  _Copyright © 2017 Apple Inc._
