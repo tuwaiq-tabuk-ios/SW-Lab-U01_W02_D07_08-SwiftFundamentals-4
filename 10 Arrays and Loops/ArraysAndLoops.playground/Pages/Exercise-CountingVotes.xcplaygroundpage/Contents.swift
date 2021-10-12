@@ -10,7 +10,9 @@ let shouldMascotChangeVotes: [Bool] = [false, false, false, true, false, true, t
 let shouldInstallCoffeeVendingMachineVotes: [Bool] = [true, true, false, false, false, true, true, false, true, true, true, true, false, true, false, false, true, false, true, false, true, true, false, false, false, false, false, true, true, true, false, false, true, true, false, true, true, true, true, false, true, false, true, true, false, false, false, false, false, false, true, false, true, true, false, true, true, true, true, false, false, true, true, false, false, false, false, true, true, false, false, true, true, true, true, false, false, true, true, false, true, false, true, false, true, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, true, false, false, true, true, false, true, false, true, true, true, false, false, false, false, false, false, true, true, false, false, true, true, true, true, true, true, false, false, false, true, true, true, true, false, false, false, true, true, false, true, true, true, false, false, true, false, true, false, true, false, false, true, false, true, true, true, true, true, true, true, false, true, false, true, true, false, false, true, false, false, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false, true, true, false, false, false, true]
 
 let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, true, false, false, false, false, false, false, true, false, true, true, false, true, true, false, false, true, true, false, false, false, false, false, false, false, true, false, false, false, false, true, false, false, false, false, false, false, true, true, false, true, true, false, true, false, true, true, false, false, false, false, true, false, true, true, false, false, false, false, true, true, true, true, false, true, false, false, true, true, false, false, false, false, false, false, true, true, false, false, false, false, false, true, true, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, false, false, true, false, true, false, false, false, true, false, true, true, true, true, true, true, true, false, false, false, false, true, false, false, false, false, false, true, false, false, true, false, false, true, false, false, true, false, false, true, false, false, true, false, false, false, false, false, true, false, false, false, false, false, false, true, true, true, false, true, false, false, false, false, false, false, false, false, true, true, true, true, false, true, true, false, false, true, false, true, true, false, false, true, true, false, true, false, false, false, true, true, false, false]
-
+//shouldMascotChangeVotes.count
+//shouldInstallCoffeeVendingMachineVotes.count
+//shouldHaveMorePollOptionsVotes.count
 //:This is too many votes to tally quickly by hand, so you’ll write some code to tally it for you.
 //:
 //: - note:\
@@ -19,17 +21,78 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
 
+
+var countYesVotes = 0
+var countNoVotes = 0
+
+
+
+
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
 
+for vote in shouldMascotChangeVotes {
+ 
+  if vote == true {
+    countYesVotes += 1
+  }
+  
+  if vote == false {
+    countNoVotes -= 1
+ 
+  }
 
+}
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
+ 
+if countYesVotes > countNoVotes {
+  print(" the vote passed ")
+} else{
+  print(" the vote failed ")
+}
 
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
 
+for vote in shouldInstallCoffeeVendingMachineVotes {
+ 
+  if vote == true {
+    countYesVotes += 1
+  }
+  
+  if vote == false {
+    countNoVotes -= 1
+  }
+
+}
+
+
+if countYesVotes > countNoVotes {
+  print(" the vote passed ")
+} else{
+  print(" the vote failed ")
+}
+
+for vote in shouldHaveMorePollOptionsVotes {
+ 
+  if vote == true {
+    countYesVotes += 1
+  }
+  
+  if vote == false {
+    countNoVotes -= 1
+  }
+
+}
+
+
+if countYesVotes > countNoVotes {
+  print(" the vote passed ")
+} else{
+  print(" the vote failed ")
+}
 
 
 
@@ -46,9 +109,20 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
  */
 // Add your vote-processing function here:
 
+func printResults(forIssue: String, withVotes: [Bool] ) {
+  var countYesVotes = 0
+  var countNoVotes = 0
 
-
-
+    for voteOne in withVotes {
+        if voteOne {
+          countYesVotes = countYesVotes + 1
+        } else {
+          countNoVotes = countNoVotes + 1
+        }
+    }
+  print("\(forIssue)\(countYesVotes)Yes\(countNoVotes)No")
+}
+printResults(forIssue: "Should we change the mascot? ", withVotes: shouldMascotChangeVotes)
 
 
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
