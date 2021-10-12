@@ -31,3 +31,12 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+print("\n\n- - - - - Exercice1 - - - - -")
+var flavors2 = ["Chocolate", "Vanilla", "Strawberry", "Mint Chocolate Chip", "Rocky Road"]
+print(flavors2)
+
+flavors[4] = "Mint Chocolate Chip"
+//4
+//because array is count 4
+
+

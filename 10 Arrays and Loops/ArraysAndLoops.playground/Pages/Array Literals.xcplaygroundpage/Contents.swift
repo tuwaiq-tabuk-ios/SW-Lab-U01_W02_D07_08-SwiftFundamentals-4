@@ -28,3 +28,8 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  
 [Previous](@previous)  |  page 2 of 17  |  [Next: Indices](@next)
 */
+print("\n\n- - - - - Exercice1 - - - - -")
+let devices2 = ["iPod", "iMac", "iPhone", "iPad"]
+print("\n\n- - - - - Exercice2 - - - - -")
+let highScores = ["44", "74", "98", "21", "54" ]
+
