@@ -28,3 +28,12 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+ // Ansot Q1
+
+
+let favoriteDevice = ["iPhone", "iPad", "iPod", "iMac"]
+ 
+
+
+// Q2
+// Swift/ContiguousArrayBuffer.swift:580: Fatal error: Index out of range

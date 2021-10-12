@@ -21,6 +21,10 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  */
 // Define highScores array below
 
+
+
+
+
 /*:
 
  
@@ -28,3 +32,13 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  
 [Previous](@previous)  |  page 2 of 17  |  [Next: Indices](@next)
 */
+// Ansaor Q1
+
+let devices2 = ["iPhone", "iPad", "iPod", "iMac", "Airpods"]
+
+
+
+// Ansaor Q2
+
+let highScores = [ "0","1","2","3","4","5","6","7","8","9"]
+

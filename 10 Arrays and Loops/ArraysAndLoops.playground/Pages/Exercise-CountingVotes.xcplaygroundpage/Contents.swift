@@ -18,18 +18,50 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
-
+var comentYes = 0
+var comentNo = 0
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
-
-
+for vote in shouldMascotChangeVotes {
+  if vote{
+    comentYes += 1
+  }
+  else{
+    comentNo += 1
+}
+}
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
-
-
+  if comentYes > comentNo {
+  print("The voto is passed")
+  }else{
+    print("The voto is faild")
+  }
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
+ comentYes = 0
+ comentNo = 0
 
+for vote in shouldInstallCoffeeVendingMachineVotes {
+  if vote{
+    comentYes += 1
+  }
+  else{
+    comentNo += 1
+}
+}
+
+
+comentYes = 0
+comentNo = 0
+
+for vote in shouldHaveMorePollOptionsVotes {
+ if vote{
+   comentYes += 1
+ }
+ else{
+   comentNo += 1
+}
+}
 
 
 
@@ -47,8 +79,25 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 // Add your vote-processing function here:
 
 
+func printResults(forIssue:String,withVotes:[Bool]){
+  var comentYes = 0
+  var comentNo = 0
+  for vote in withVotes {
+    if vote{
+      comentYes += 1
+    }
+    else{
+      comentNo += 1
+}
 
+ 
+}
+print("\(forIssue) \(comentYes) yes, \(comentNo) no")
+}
 
+printResults(forIssue: "Should we change the mascot?", withVotes:shouldMascotChangeVotes)
+printResults(forIssue: "Should we change the mascot?", withVotes:shouldInstallCoffeeVendingMachineVotes)
+printResults(forIssue: "Should we change the mascot?", withVotes:shouldHaveMorePollOptionsVotes)
 
 
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
