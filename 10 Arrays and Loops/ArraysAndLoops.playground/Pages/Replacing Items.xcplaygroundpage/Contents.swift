@@ -5,7 +5,7 @@
 
  Earlier, you saw how to access an item in an array by using its index:
  */
-var flavors = ["Chocolate", "Vanilla", "Strawberry", "Pistachio", "Rocky Road"]
+var flavors = ["Chocolate", "Vanilla", "Strawberry", "Mango", "Rocky Road"]
 
 let firstFlavor = flavors[0] // Remember, the first item is at index 0
 /*:
@@ -22,12 +22,12 @@ let newFirstFlavor = flavors[0]
  - experiment: Change the value of "Pistachio" to a flavor of ice cream that’s not already used in the array, like “Mint Chocolate Chip.” Check the results sidebar to make sure you’ve made the change.
 */
 // Change "Pistachio" to another flavor.
-
+//var flavors = ["Chocolate", "Vanilla", "Strawberry", "Mango", "Rocky Road"]
 /*: 
  If you try to use an index that is not contained in the array, you will get an error. You can only replace values in a mutable array using subscripts, you can’t add or remove things.
  - experiment: In the statement below, what’s the highest number you can set the subscript to without receiving an error. Why is that the highest number you can use?
 */
-flavors[1] = "Maple Walnut"
+flavors[4] = "Maple Walnut" //this is the bound of the array
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)

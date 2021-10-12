@@ -5,13 +5,27 @@ Think of a goal of yours that can be measured in progress every day, whether itâ
 
  - callout(Exercise): Create an array literal with 20 to 25 items of sample data for your daily activity. It may be something like `let milesBiked = [3, 7.5, 0, 0, 17 ... ]` Feel free to make up or embellish the numbers, but make sure you have entries that are above, below and exactly at the goal you've thought of. _Hint: Make sure to choose the right kind of array for your data, whether `[Double]` or `[Int]`._
 */
+ var canvasesPainted = [1, 3, 0, 2, 0, 10, 0, 2, 1, 1, 1, 1, 3, 0 ,2, 5, 1, 2, 4, 0, 3]
 
 //: - callout(Exercise): Write a function that takes the daily number as an argument and returns a message as a string. It should return a different message based on how close the number comes to your goal. You can be as ambitious and creative as you'd like with your responses, but make sure to return at least two different messages depending on your daily progress!
+let goal: Double = 4
+
+func goalAchievedMessage (dailyPaints: Double) -> String {
+    if dailyPaints > goal*2 {
+        return  "You painted \(dailyPaints) canvases today. Great! You really reached your goal."
+    } else if dailyPaints >= goal {
+        return  "You painted \(dailyPaints) canvases today. Congratulations! You have reached your goal."
+    } else {
+        return "You painted \(dailyPaints) canvases today. You need to paint a little more today."
+    }
+}
 
 
 
 //: - callout(Exercise): Write a `forâ€¦in` loop that loops over your sample data, calls your function to get an appropriate message for each item, and prints the message to the console.
-
+for dailyPaints in canvasesPainted {
+  print(goalAchievedMessage(dailyPaints: Double(dailyPaints)))
+}
 
 
 
