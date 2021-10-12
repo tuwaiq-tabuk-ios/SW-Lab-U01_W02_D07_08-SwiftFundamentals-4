@@ -8,7 +8,7 @@
 let friends = ["Name", "Name2", "Name3", "Name4", "Name5"]
 //: Now you can define a function to process each item in the array:
 func invite(friend: String) {
-    print("Hey, \(friend), please come to my party on Friday!")
+    print("Hey, \(friend), please come to my party on Friday!") 
 }
 //: And then call the function over and over again. Check the console for output:
 invite(friend: friends[0])
