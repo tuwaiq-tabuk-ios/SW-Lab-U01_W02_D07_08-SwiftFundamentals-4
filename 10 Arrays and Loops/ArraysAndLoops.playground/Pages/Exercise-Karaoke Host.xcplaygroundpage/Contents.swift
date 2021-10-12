@@ -8,6 +8,8 @@
  - callout(Exercise):
  Create an empty array to hold song titles as strings, and use the `append` method to add three or four songs one at a time.
  */
+var Karaoke = ["rap", "jaz", "kamnja"]
+Karaoke.insert("aod", at: 3)
 
 
 
@@ -16,7 +18,7 @@
  - callout(Exercise):
  One enthusiastic singer wants to add three songs at once. Create an array holding this one singer's song list and use the `+=` operator to append their whole list to the end of the group's song list.
  */
-
+Karaoke += ["a","x","e"]
 
 
 
@@ -27,6 +29,10 @@
  */
 
 
+for music in Karaoke{
+  print(music)
+}
+
 
 
 
@@ -35,7 +41,7 @@
  - callout(Exercise):
  After the loop has called everyone up to sing, use the `removeAll` method on the song list to clear out all the past songs.
  */
-
+Karaoke.removeAll()
 
 
 

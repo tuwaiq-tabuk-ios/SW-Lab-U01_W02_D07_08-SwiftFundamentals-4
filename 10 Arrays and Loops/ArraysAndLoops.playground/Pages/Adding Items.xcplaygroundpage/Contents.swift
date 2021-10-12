@@ -13,9 +13,10 @@ list.insert("Kumquat", at: 0)
 //: You can append a whole array of items using the compound assignment operator `+=`:
 list += ["Strawberry", "Plum", "Watermelon"]
 //: - experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
-
-
-
+list.append("ali")
+list.insert("ahmed", at: 6)
+list += ["water","sa","appel"]
+//Best increase for this value list += ["water","sa","appel"] Because it's faster
 
 
 
