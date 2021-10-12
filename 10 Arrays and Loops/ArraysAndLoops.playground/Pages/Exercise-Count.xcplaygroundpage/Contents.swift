@@ -16,3 +16,14 @@ let index = 3
 
 
 //: [Previous](@previous)  |  page 13 of 17  |  [Next: Exercise: Karaoke Host](@next)
+let index1 = 7
+ if index1 < devices.count {
+     devices[index]
+ }
+
+
+ let index2 = 6
+ if index1 < devices.count {
+     devices[index]
+ }
+

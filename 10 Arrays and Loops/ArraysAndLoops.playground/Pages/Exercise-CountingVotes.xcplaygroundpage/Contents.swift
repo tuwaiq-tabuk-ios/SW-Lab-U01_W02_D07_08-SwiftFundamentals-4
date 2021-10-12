@@ -44,11 +44,76 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
  A message like this should be printed to the console:\
  `Should we change the mascot? 54 yes, 23 no`
  */
-// Add your vote-processing function here:
+ //Add your vote-processing function here
+func printResults(forIssue: String, withVotes:[Bool]){
+
+   var countYes = 0
+   var countNo = 0
+   for vote in withVotes {
+     if vote {
+       countYes += 1
+     }else{
+       countNo += 1
+     }
+   }
+   print("\(forIssue) \(countYes) yes, \(countNo) no")
+
+ }
 
 
-
+ printResults(forIssue: "Should we change the mascot?", withVotes:shouldMascotChangeVotes)
+ printResults(forIssue: "Should we change the mascot?", withVotes:shouldInstallCoffeeVendingMachineVotes)
+ printResults(forIssue: "Should we change the mascot?", withVotes:shouldHaveMorePollOptionsVotes)
 
 
 
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+
+
+//Ex 1
+var countYes = 0
+ var countNo = 0
+
+
+//Ex2
+
+for vote in shouldMascotChangeVotes {
+   if vote {
+     countYes += 1
+   }else{
+     countNo += 1
+   }
+ }
+
+//Ex3
+
+if countYes > countNo {
+   print("The vote is passed")
+ }else{
+   print("The vote is failed")
+ }
+//Ex4
+countYes = 0
+ countNo = 0
+
+ for vote in shouldInstallCoffeeVendingMachineVotes {
+   if vote {
+     countYes += 1
+   }else{
+     countNo += 1
+   }
+ }
+
+
+
+ countYes = 0
+ countNo = 0
+
+ for vote in shouldHaveMorePollOptionsVotes {
+   if vote {
+     countYes += 1
+   }else{
+     countNo += 1
+   }
+ }
+
