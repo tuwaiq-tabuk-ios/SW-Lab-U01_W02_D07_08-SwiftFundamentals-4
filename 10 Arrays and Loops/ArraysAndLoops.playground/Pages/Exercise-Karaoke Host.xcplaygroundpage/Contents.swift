@@ -37,6 +37,31 @@
  */
 
 
-
-
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+//Exercise1
+var mySongs = [String]()
+
+mySongs.append("Lost On You")
+mySongs.append("Wonderful World")
+mySongs.append("Amor mio")
+mySongs.append("City Of Stars")
+mySongs.append("La javanaise")
+
+
+//Exersice2
+let SergeGainsbourgSongs = ["La chanson de Prévert",
+                            "L'Anamour",
+                            "Le Poinçonneur des Lilas"]
+
+mySongs += SergeGainsbourgSongs
+
+
+// Exercise3
+print("\n\n----- Exercise 3 -----")
+for mySong in mySongs {
+  print("Next song is: \(mySong)")
+}
+
+//Exercice4
+print("----Exerice 4-----")
+mySongs.removeAll()

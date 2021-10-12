@@ -5,6 +5,8 @@
 
  Earlier, you saw how to access an item in an array by using its index:
  */
+
+import Darwin
 var flavors = ["Chocolate", "Vanilla", "Strawberry", "Pistachio", "Rocky Road"]
 
 let firstFlavor = flavors[0] // Remember, the first item is at index 0
@@ -31,3 +33,16 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+//Experiment1
+var flavors1 = ["Chocolate", "Vanilla", "Strawberry", "Pistachio", "Rocky Road"]
+
+let firstFlavor1 = flavors1[0]
+
+flavors1.remove(at: 3)
+flavors1.insert("Mint Chocolate Chip", at: 3)
+
+
+
+//Experiment2
+//The highest number I can use is "4"
+flavors1[1] = "Maple Walnut"
