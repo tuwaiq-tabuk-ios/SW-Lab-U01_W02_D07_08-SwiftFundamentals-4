@@ -13,13 +13,13 @@
  
  To run code for each item in an array, you can use a _for…in_ loop. Here is an array of `friends` that's processed by loop:
 */
-let friends = ["Name", "Name2", "Name3", "Name4", "Name5"]
+/*let friends = ["Name", "Name2", "Name3", "Name4", "Name5"]
 
 for friend in friends {
     let sparklyFriend = "✨\(friend)✨"
     print("Hey, \(sparklyFriend), please come to my party on Friday!")
 }
-print("Done, all friends have been invited.")
+print("Done, all friends have been invited.")*/
 //: The first line sets up the loop with two important pieces of information:
 //: 1. Which collection to work through (in this case, `friends`).
 //: 2. What to call the item being worked with (in this case, `friend`).
@@ -30,3 +30,12 @@ print("Done, all friends have been invited.")
 //friend
 //: Next, make arrays that can change.\
 //: [Previous](@previous)  |  page 7 of 17  |  [Next: Mutable Arrays](@next)
+let friends = ["Name", "Name2", "Name3", "Name4", "Name5"]
+
+for friend in friends {
+    let sparklyFriend = "✨\(friend)✨"
+    print("Hey, \(sparklyFriend), please come to my party on Friday!")
+}
+print("Done, all friends have been invited.")
+
+//friend

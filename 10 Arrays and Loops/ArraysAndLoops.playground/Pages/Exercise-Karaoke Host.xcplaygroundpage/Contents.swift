@@ -40,3 +40,23 @@
 
 
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+//Exersice1
+
+var songtitles = [String] ()
+songtitles.append("Sway" )
+songtitles.append("Besame Mucho" )
+songtitles.append("Killing me softly")
+songtitles.append("Fly Me To The Moon")
+
+//Exersice2
+songtitles += ["How Long" , "work" , "say so" ]
+
+//Exersice3
+
+for songtitle in songtitles {
+   print("Next song is: \(songtitle)")
+}
+//Exersice4
+
+songtitles.removeAll()
+songtitles
