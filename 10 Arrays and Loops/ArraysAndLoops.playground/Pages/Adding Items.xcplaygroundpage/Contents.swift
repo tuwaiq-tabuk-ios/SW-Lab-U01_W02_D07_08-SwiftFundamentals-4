@@ -14,6 +14,8 @@ list.insert("Kumquat", at: 0)
 list += ["Strawberry", "Plum", "Watermelon"]
 //: - experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
 
+//list += ["Carrots","orange"]
+
 
 
 
@@ -22,3 +24,4 @@ list += ["Strawberry", "Plum", "Watermelon"]
 
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+list += ["Carrots","orange"]

@@ -31,6 +31,7 @@
 
 
 
+
 /*:
  - callout(Exercise):
  After the loop has called everyone up to sing, use the `removeAll` method on the song list to clear out all the past songs.
@@ -39,4 +40,24 @@
 
 
 
+
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+//ex1
+var  karaoke = [String]()
+
+
+//ex2
+
+karaoke += ["daha","dabka", "rafahe", ]
+
+//ex3
+for song in karaoke {
+    
+ 
+    print(" turn \(song)")
+    
+    //ex4
+    
+    karaoke.removeAll()
+    print(karaoke)
+}

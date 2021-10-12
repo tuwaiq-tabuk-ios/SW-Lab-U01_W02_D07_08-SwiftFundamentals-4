@@ -22,6 +22,8 @@ let newFirstFlavor = flavors[0]
  - experiment: Change the value of "Pistachio" to a flavor of ice cream that’s not already used in the array, like “Mint Chocolate Chip.” Check the results sidebar to make sure you’ve made the change.
 */
 // Change "Pistachio" to another flavor.
+//  flavors[3] = "ice cream"
+//let MintChocolateChip = flavors[3]
 
 /*: 
  If you try to use an index that is not contained in the array, you will get an error. You can only replace values in a mutable array using subscripts, you can’t add or remove things.
@@ -31,3 +33,12 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+//ex1
+flavors[3] = "ice cream"
+let MintChocolateChip = flavors[3]
+
+
+
+
+//ex2
+flavors[4] = "Maple Walnut"
