@@ -21,15 +21,11 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
 
-
-
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
-
 
 
 
@@ -47,8 +43,40 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 // Add your vote-processing function here:
 
 
+  
+
 
 
 
 
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+//Exercise1
+var yesVotes: Int = 0
+var noVotes = 0
+func printResults(forIssue:String,withVotes:[Bool]) {//Exercise2
+for vote in shouldHaveMorePollOptionsVotes {
+  if vote == true {
+    yesVotes += 1
+  }
+  else {
+
+    noVotes += 1
+  }
+}
+
+
+
+//Exercise3
+/*if yesVotes > noVotes
+{
+print("The vote yes is Win")
+}
+else
+{
+print("The vote no is Win")
+}
+ */
+  print("\(forIssue)\(yesVotes) yes,\(noVotes) no")
+  
+}
+printResults(forIssue:"Should we change the mascot?" , withVotes: shouldMascotChangeVotes)

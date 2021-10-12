@@ -8,7 +8,7 @@
 import Foundation
 
 aliceMessages
-
+// print (aliceMessages)
 
 /*:
  The Caterpillar has asked you to go through the messages and to relay any that contain the Caterpillar's name. Instead of reading all the text yourself, you decide to write more code to help.
@@ -35,3 +35,8 @@ If the message refers to the Caterpillar, print it to the console.
  _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
  */
 //: [Previous](@previous)  |  page 17 of 17
+for massage in aliceMessages{
+  if massage.contains("caterpillar"){
+    print(massage)
+  }
+}
