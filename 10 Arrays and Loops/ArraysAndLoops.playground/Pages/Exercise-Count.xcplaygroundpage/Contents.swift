@@ -16,3 +16,10 @@ let index = 3
 
 
 //: [Previous](@previous)  |  page 13 of 17  |  [Next: Exercise: Karaoke Host](@next)
+//Exercise:
+
+let index1 = 3
+if index1 < devices.count{
+    devices[index1]
+}
+// I updated to index1 = 5 (no result in consol)

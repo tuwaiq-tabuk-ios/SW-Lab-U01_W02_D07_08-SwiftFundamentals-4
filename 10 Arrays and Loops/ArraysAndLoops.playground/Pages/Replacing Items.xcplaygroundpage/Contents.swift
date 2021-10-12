@@ -31,3 +31,11 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+// Experiment 1:
+// var flavors = ["Chocolate", "Vanilla", "Strawberry", "Pistachio", "Rocky Road"]
+flavors [3] = "Mint Chocolate Chip"
+print(flavors)
+
+
+// Experiment 2:
+//flavors[1] = "Maple Walnut"

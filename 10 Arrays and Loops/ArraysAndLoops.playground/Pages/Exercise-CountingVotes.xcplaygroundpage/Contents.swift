@@ -5,6 +5,8 @@
  
  This is a lot of data! But don't worry too much about the long arrays. Whether you're planning to loop over two items or two thousand, you’ll write the loop in exactly the same way.
  */
+
+import Foundation
 let shouldMascotChangeVotes: [Bool] = [false, false, false, true, false, true, true, true, false, true, true, true, true, false, true, true, false, true, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true, false, false, true, true, false, false, true, true, true, false, true, false, true, true, false, true, true, false, true, false, false, true, false, true, true, false, false, true, false, true, true, true, false, true, true, false, false, true, false, true, true, false, false, false, true, false, true, true, false, true, true, true, true, true, true, true, false, true, false, true, false, true, true, true, true, true, true, true, false, true, true, false, true, true, true, true, true, true, true, false, true, true, false, true, true, false, true, true, true, true, true, false, false, false, false, true, true, true, false, true, true, false, false, true, false, false, true, true, true, true, false, true, true, true, true, false, true, true, false, true, false, false, true, true, false, true, false, false, false, true, false, false, false, true, false, true, true, false, true, true, false, true, true, true, false, false, false, true, false, true, false, true, true, true, true, false, true, false, false, true, true, true, true, true, false]
 
 let shouldInstallCoffeeVendingMachineVotes: [Bool] = [true, true, false, false, false, true, true, false, true, true, true, true, false, true, false, false, true, false, true, false, true, true, false, false, false, false, false, true, true, true, false, false, true, true, false, true, true, true, true, false, true, false, true, true, false, false, false, false, false, false, true, false, true, true, false, true, true, true, true, false, false, true, true, false, false, false, false, true, true, false, false, true, true, true, true, false, false, true, true, false, true, false, true, false, true, true, true, false, true, true, true, false, false, false, false, false, false, false, false, false, false, false, true, false, true, false, false, true, true, false, true, false, true, true, true, false, false, false, false, false, false, true, true, false, false, true, true, true, true, true, true, false, false, false, true, true, true, true, false, false, false, true, true, false, true, true, true, false, false, true, false, true, false, true, false, false, true, false, true, true, true, true, true, true, true, false, true, false, true, true, false, false, true, false, false, true, false, false, false, true, false, true, true, true, false, false, false, false, false, false, true, false, true, false, true, true, false, false, false, true]
@@ -21,17 +23,10 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
 
-
-
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
-
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
-
-
-
 
 /*:
  ### Extension:
@@ -44,11 +39,66 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
  A message like this should be printed to the console:\
  `Should we change the mascot? 54 yes, 23 no`
  */
-// Add your vote-processing function here:
-
-
-
-
 
 
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+//Exercise 1 :
+
+var yesVote = 0
+var noVote = 0
+
+
+//Exercise 2 :
+
+for vote in shouldMascotChangeVotes {
+  if vote == true {
+    yesVote += 1
+  } else {
+    noVote += 1
+  }
+}
+
+
+//Exercise 3 :
+
+if yesVote > noVote {
+  print("passed")
+} else {
+  print("faild")
+}
+
+
+//Exercise 4 :
+
+func printResults(forIssue: String, withVotes: [Bool]){
+  for vote in shouldMascotChangeVotes {
+    if vote == true {
+      yesVote += 1
+    } else {
+      noVote += 1
+    }
+    
+  }
+  print("\(forIssue) \(yesVote) yes, \(noVote) No")
+
+}
+
+printResults(forIssue: "Should we change the mascot?", withVotes:shouldMascotChangeVotes)
+
+  
+  
+//Exercise 4 :
+//Which measures won by popular vote?
+
+printResults(forIssue: "",
+             withVotes: shouldMascotChangeVotes)
+
+printResults(forIssue: "",
+             withVotes: shouldInstallCoffeeVendingMachineVotes)
+
+printResults(forIssue: "",
+             withVotes: shouldHaveMorePollOptionsVotes)
+
+//The winner is shouldMascotChange
+
+

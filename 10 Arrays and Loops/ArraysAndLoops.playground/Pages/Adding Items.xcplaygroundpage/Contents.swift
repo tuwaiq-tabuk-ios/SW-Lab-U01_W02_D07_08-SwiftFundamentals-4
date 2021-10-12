@@ -14,11 +14,21 @@ list.insert("Kumquat", at: 0)
 list += ["Strawberry", "Plum", "Watermelon"]
 //: - experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
 
-
-
-
-
-
-
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+//Experiment:
+
+var list1 = [String]()
+list1.append("Kiwi")
+print(list1)
+//.append: used when we want to add a new element to the end of an array or to an empty array.
+
+list1.insert("Mango", at:0)
+print(list1)
+//.insert: used when we want to add a new element to a specific place of an array.
+
+list1 += ["Apple", "Avocado"]
+print(list1)
+//+ : used when we want to add a different array to the end of list1 array.
+
+//I prefer to use .insert method because it is more accurate to work with.
