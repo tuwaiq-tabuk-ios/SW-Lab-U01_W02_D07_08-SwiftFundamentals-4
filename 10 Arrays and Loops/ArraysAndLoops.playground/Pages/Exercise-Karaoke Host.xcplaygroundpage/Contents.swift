@@ -40,3 +40,29 @@
 
 
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+print("------------(Exersice2)-----------")
+
+var songs = [String]()
+
+songs.append("love")
+songs.append("hard")
+songs.append("life")
+
+print(songs)
+
+print("\n\n------------(Exersice3)-----------")
+songs += ["air", "wow", "horse"]
+
+
+print("\n\n------------(Exersice3)-----------")
+
+
+
+for song in songs {
+  print("Next song is: \(song)")
+}
+  
+
+print("\n\n------------(Exersice4)-----------")
+songs.removeAll()
+songs

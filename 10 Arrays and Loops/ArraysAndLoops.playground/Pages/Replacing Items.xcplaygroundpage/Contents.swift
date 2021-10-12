@@ -31,3 +31,14 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+print("------------(Exersice2)-----------")
+
+
+// Change "Pistachio" to another flavor.
+let Flavor = flavors[3]
+flavors[3] = "Toffi"
+print(flavors)
+
+
+
+

@@ -16,3 +16,9 @@ let index = 3
 
 
 //: [Previous](@previous)  |  page 13 of 17  |  [Next: Exercise: Karaoke Host](@next)
+print("------------(Exersice2)-----------")
+let index2 = 2
+//if <#comparison statement here#> {
+    devices[index]
+//}
+print(index2)
