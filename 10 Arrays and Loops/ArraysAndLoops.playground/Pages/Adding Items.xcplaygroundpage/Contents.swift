@@ -17,7 +17,15 @@ list += ["Strawberry", "Plum", "Watermelon"]
 
 
 
+print("------------(Exersice2)-----------")
 
+
+
+list.append("Apple")
+list.insert("Banan", at: 0)
+list += ["Guava", "peache", "Watermelon"]
+
+print(list)
 
 
 //: Move on to find out how to remove items from an array.\
