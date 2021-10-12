@@ -22,3 +22,10 @@ list += ["Strawberry", "Plum", "Watermelon"]
 
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+list.append("red")
+list.insert("blue", at: 2)
+list += ["blck", "green", "red"]
+//the first one
+//append to adding items
+//insert to adding items in index
+//+= add array to array 

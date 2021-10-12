@@ -1,6 +1,6 @@
 //: ## Indices
 //: Here is an array of devices:
-let devices = ["iPhone", "iPad", "iPod", "iMac"]
+var devices = ["iPhone", "iPad", "iPod", "iMac"]
 /*:
  Use the Show Result button to view the result inline, like you did on the previous page. Each item in the array has a number next to it, starting at zero.
  
@@ -28,3 +28,14 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+print("\n\n- - - - - Exercice1 - - - - -")
+print(devices[2])
+print(devices)
+
+print("\n\n- - - - - Exercice1 - - - - -")
+
+devices.insert("macBook" , at: 4)
+print(devices)
+print(devices[4])
+
+
