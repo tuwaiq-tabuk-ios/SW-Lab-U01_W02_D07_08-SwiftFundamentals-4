@@ -2,18 +2,14 @@
 Fundamentals covering Classes versus Structs, Arrays and Loops
 
 ## Topics
-1. Classes versus Structs
-2. Default and overloaded initializers
-3. Access to values through substring syntax.
-4. How Class instances behave in memory compared to Struct instances 
-5. Assignation by reference and by value
-6. When to use a struct over a class and vice versa.
-7. Collections - Arrays
-8. Mutable Arrays
-9. Adding, removing and replacing items in arrays.
-2. Loops
-
+1- I learn what's the different between Classes and Struct
+2- I learn when using Classes or Struct
+3- I learn how to work with Array and how add object in array , remove object from array and replace object in array
+4- I learn how to work with for .. in loop and how use the array with it
+ 
+ 
  ## Description
+
 1. Battery of exercises included in the playgrounds
 
 ## DeadLine 

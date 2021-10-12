@@ -26,3 +26,24 @@ var anotherGrade = grades[1]
 
 //: Next, learn how to work through the values in an array.\
 //: [Previous](@previous)  |  page 5 of 17  |  [Next: Processing Arrays](@next)
+//Ex1
+
+//let grades = ["A", "B", "C", "D", "E"]..... let grades: [String]
+
+
+//let starRatings = [1, 2, 3, 4, 5]..... let starRatings: [Int]
+
+
+//Ex2
+
+//let grades: String
+
+//let someRating: Int
+
+
+//Ex3
+var AnotherGrade = grades[4]
+
+//Change the name in the array
+
+

@@ -17,3 +17,30 @@ Think of a goal of yours that can be measured in progress every day, whether it�
 
 
 //: [Previous](@previous)  |  page 16 of 17  |  [Next: Exercise: Screening Messages](@next)
+//Ex1
+
+let milesBiked: [Double] = [3.1,7.2, 5, 7, 8.2, 0.3, 13.2, 7.1, 4, 7, 7.9, 3.9, 4.7, 8.2, 7, 7, 5.1, 16.9, 4, 7, 20, 7, 0]
+ milesBiked.count
+ let goal: Double = 7
+
+
+ //Ex2
+ func goalAchievedMessage (dailyNumber: Double) -> String {
+   if dailyNumber > goal {
+     return  "You walked \(dailyNumber) km today, Good job!👍🏻 You really exceeded your goal!"
+   }
+   else if dailyNumber >= goal {
+     return  "You walked \(dailyNumber) km today, Greatwork💪✨! You have reached your goal!!"
+   }
+   else {
+     return "You walked \(dailyNumber) km today, You need to walk a little more☹️"
+   }
+ }
+
+
+ //Ex3
+
+
+ for dailyKm in milesBiked {
+         print(goalAchievedMessage(dailyNumber: dailyKm))
+ }

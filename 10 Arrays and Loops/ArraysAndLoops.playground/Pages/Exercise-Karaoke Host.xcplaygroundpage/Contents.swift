@@ -40,3 +40,30 @@
 
 
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+//ex1
+var songArray = [String]()
+
+ songArray.append("Song 0")
+ songArray.append("Song 1")
+ songArray.append("Song 2")
+ 
+
+//ex2
+
+songArray +=
+  [
+  "Song 3",
+              "Song 4"
+              ,"Song 5"]
+
+
+//ex3
+
+for song in songArray {
+   print("turn \(song)")
+ }
+
+
+//ex4
+songArray.removeAll()
+ print(songArray)

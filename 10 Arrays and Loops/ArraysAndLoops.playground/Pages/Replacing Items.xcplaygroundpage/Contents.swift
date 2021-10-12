@@ -18,6 +18,7 @@ flavors[0] = "Fudge Ripple"
 
 let newFirstFlavor = flavors[0]
 
+
 /*:
  - experiment: Change the value of "Pistachio" to a flavor of ice cream that’s not already used in the array, like “Mint Chocolate Chip.” Check the results sidebar to make sure you’ve made the change.
 */
@@ -31,3 +32,12 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+//ex1
+var flavors1 = flavors
+ flavors1[3] = "Mint Chocolate Chip"
+ flavors1
+
+
+//ex2
+
+flavors[1] = "Maple Walnut"

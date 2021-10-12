@@ -28,3 +28,4 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  
 [Previous](@previous)  |  page 2 of 17  |  [Next: Indices](@next)
 */
+let highScores = [0,1,2,3,4,5,6,7,8,9]
