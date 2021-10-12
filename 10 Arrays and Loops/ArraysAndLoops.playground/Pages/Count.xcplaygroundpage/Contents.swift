@@ -11,3 +11,7 @@ let numberOfChores = chores.count
 let choresTime = numberOfChores * minutesPerChore
 //: Next learn how the type system in Swift handles arrays.\
 //: [Previous](@previous)  |  page 4 of 17  |  [Next: Types](@next)
+// just try
+let numberOfChores1 =  chores.count
+let choresTime1 = numberOfChores1 * minutesPerChore
+print(choresTime1)

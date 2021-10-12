@@ -10,6 +10,7 @@ import Foundation
 aliceMessages
 
 
+
 /*:
  The Caterpillar has asked you to go through the messages and to relay any that contain the Caterpillar's name. Instead of reading all the text yourself, you decide to write more code to help.
  
@@ -23,6 +24,11 @@ If the message refers to the Caterpillar, print it to the console.
  */
 // Write the `for…in` loop here:
 
+for message in aliceMessages{
+  if message.contains("caterpillar"){
+    print(message)
+  }
+}
 
 /*:
  

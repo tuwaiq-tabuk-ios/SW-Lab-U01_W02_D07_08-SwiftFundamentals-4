@@ -28,3 +28,13 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  
 [Previous](@previous)  |  page 2 of 17  |  [Next: Indices](@next)
 */
+//Change the order or number of items in the devices array literal above.
+print("- - - - - - Exercise 1 - - - - - -  ")
+
+let devices1 = ["iPad", "iMac", "iPod", "iPhone"]
+print(devices1)
+
+
+print("- - - - - - Exercise 2 - - - - - -  ")
+let highScores = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(highScores)

@@ -22,12 +22,25 @@ let newFirstFlavor = flavors[0]
  - experiment: Change the value of "Pistachio" to a flavor of ice cream that’s not already used in the array, like “Mint Chocolate Chip.” Check the results sidebar to make sure you’ve made the change.
 */
 // Change "Pistachio" to another flavor.
+print("- - - - - - Exercise 1 - - - - - -  ")
 
+let thirdFlavor = flavors[3]
+flavors[3] = "Mint Chocolate Chip"
+
+let newThirdFlavor = flavors[3]
+//print(flavors)
 /*: 
  If you try to use an index that is not contained in the array, you will get an error. You can only replace values in a mutable array using subscripts, you can’t add or remove things.
  - experiment: In the statement below, what’s the highest number you can set the subscript to without receiving an error. Why is that the highest number you can use?
 */
 flavors[1] = "Maple Walnut"
-
+flavors[0]
+flavors[2]
+flavors[3]
+flavors[4]
+//flavors[5]
+flavors.count
+//[4] is highest number i can set the subscript to without receiving an error.
+//because the length of the array is 5 starts with index[0]
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
