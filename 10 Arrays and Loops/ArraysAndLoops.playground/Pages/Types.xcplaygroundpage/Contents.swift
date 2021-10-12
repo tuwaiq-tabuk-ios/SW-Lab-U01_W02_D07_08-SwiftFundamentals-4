@@ -26,3 +26,20 @@ var anotherGrade = grades[1]
 
 //: Next, learn how to work through the values in an array.\
 //: [Previous](@previous)  |  page 5 of 17  |  [Next: Processing Arrays](@next)
+//Exercise 1:
+
+let grades1 = ["A", "B", "C", "D", "E"]   //String
+let starRatings1 = [1, 2, 3, 4, 5]        //Int
+
+
+//Exercise 2:
+
+let someGrade1 = grades1[0]           //a String
+let someRating1 = starRatings1[0]     //an Int
+
+
+//Exercise 3:
+//Try setting anotherGrade to a number. What happens?
+var anotherGrade1 = grades1[1]
+//an error will appear because its a mutable array so, we only can change the value but not the type.
+
