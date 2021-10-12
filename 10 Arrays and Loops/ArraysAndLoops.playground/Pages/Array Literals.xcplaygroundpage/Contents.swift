@@ -20,7 +20,7 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  - experiment: Create a new constant named `highScores` below and assign it an array containing a list of ten numbers.
  */
 // Define highScores array below
-
+let highScores = ["one", "two", "three","five", "six", "seven", "eight", "nine", "ten"]
 /*:
 
  
@@ -28,3 +28,4 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  
 [Previous](@previous)  |  page 2 of 17  |  [Next: Indices](@next)
 */
+
