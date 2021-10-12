@@ -28,3 +28,13 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+print("\n - - - - - Exercice1 - - - - -")
+
+let favoriteDevice = ["iPhone", "iPad", "iPod", "iMac"]
+favoriteDevice[1]
+
+print(favoriteDevice)
+
+print("\n\n - - - - - Exercice2 - - - - -")
+
+//favoriteDevice[4]

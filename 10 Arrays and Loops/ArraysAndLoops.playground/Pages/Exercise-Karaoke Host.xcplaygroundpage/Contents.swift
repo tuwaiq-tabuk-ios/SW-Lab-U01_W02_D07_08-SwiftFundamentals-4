@@ -40,3 +40,24 @@
 
 
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+print("\n - - - - - Exercice1 - - - - -")
+
+var songtitles = [String] ()
+songtitles.append("if on my heart")
+songtitles.append("sway")
+songtitles.append("in front of people")
+songtitles.append("love all my life")
+
+print("\n\n - - - - - Exercice2- - - - -")
+
+songtitles += ["Yummy","hello"," Work"]
+
+print("\n - - - - - Exercice3 - - - - -")
+
+for songtitles in songtitles {
+    print("Next song is : \(songtitles)")
+}
+print("\n\n - - - - - Exercice4- - - - -")
+songtitles.removeAll()
+songtitles
+

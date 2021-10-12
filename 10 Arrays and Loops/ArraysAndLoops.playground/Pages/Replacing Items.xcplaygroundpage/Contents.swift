@@ -31,3 +31,18 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+print("\n- - - - - Exercice1 - - - - -")
+
+let myflavors = flavors.remove(at:3)
+flavors
+flavors.insert("Mint Chocolate Chip.", at: 3)
+
+print("\n- - - - - Exercice2 - - - - -")
+
+/* what’s the highest number you can set the subscript to without receiving an error ?
+answer : 4
+
+Why is that the highest number you can use?
+ Because the last index of the array is 4 .
+ */
+
