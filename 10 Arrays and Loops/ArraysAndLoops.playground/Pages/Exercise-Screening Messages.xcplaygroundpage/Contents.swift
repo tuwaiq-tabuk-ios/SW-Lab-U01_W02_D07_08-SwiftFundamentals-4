@@ -23,6 +23,12 @@ If the message refers to the Caterpillar, print it to the console.
  */
 // Write the `for…in` loop here:
 
+for messgae in aliceMessages {
+  if messgae.contains("Caterpillar") {
+    print("\(messgae)\n")
+  }
+}
+
 
 /*:
  

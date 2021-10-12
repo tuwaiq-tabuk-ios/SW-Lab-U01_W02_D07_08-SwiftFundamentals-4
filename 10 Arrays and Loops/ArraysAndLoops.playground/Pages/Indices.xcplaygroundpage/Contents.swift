@@ -28,3 +28,12 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+
+
+// Experiment 1
+let favoriteDevice = ["iPhone", "iPad", "iPod", "iMac"]
+favoriteDevice[2]
+
+// Experiment 2
+
+//favoriteDevice[4]
