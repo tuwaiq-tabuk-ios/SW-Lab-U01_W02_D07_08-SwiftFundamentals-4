@@ -22,3 +22,9 @@ list += ["Strawberry", "Plum", "Watermelon"]
 
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+var array = [String]()
+array.append("rasha")
+array.insert("aiad", at: 1)
+array += ["rasha" , "aiad"]
+
+//better insert because arranges the array
