@@ -22,3 +22,21 @@ list += ["Strawberry", "Plum", "Watermelon"]
 
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+
+var list1 = [String]()
+
+list1.append("Cherry")
+
+list1.insert("Kiwi", at: 0)
+
+list1 += ["apple", "orange", "mango"]
+
+/*
+ append:
+ If it is empty array
+ insert:
+add variables in array
+ + :
+Add a second array */
+
+//my prefer is append

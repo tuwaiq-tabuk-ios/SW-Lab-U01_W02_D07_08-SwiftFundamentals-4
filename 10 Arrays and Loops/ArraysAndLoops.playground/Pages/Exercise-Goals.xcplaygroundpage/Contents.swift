@@ -17,3 +17,25 @@ Think of a goal of yours that can be measured in progress every day, whether itâ
 
 
 //: [Previous](@previous)  |  page 16 of 17  |  [Next: Exercise: Screening Messages](@next)
+print("\n - - - - - Exercice1 - - - - -")
+let milesBiked :[Double] =
+    [3.3 , 7.5, 0.3 , 0.25 , 7.5 , 10.5 , 15.0, 22.0 , 33.6, 0.0 , 6.0 ]
+milesBiked.count
+let medaily = 29.0
+
+print("\n\n- - - - - Exercice2 - - - - -")
+
+func dailyGaol (mygaol : Double) -> String {
+    if (mygaol >= medaily){
+        return "Excellent Job"
+    } else {
+        return "Try again"
+    }
+}
+
+print("\n\n- - - - - Exercice3 - - - - -")
+
+for number in milesBiked {
+    
+    print(dailyGaol(mygaol: number))
+}
