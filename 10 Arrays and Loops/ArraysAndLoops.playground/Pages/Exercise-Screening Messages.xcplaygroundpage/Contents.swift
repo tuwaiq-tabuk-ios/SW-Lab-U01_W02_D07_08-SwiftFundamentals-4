@@ -7,8 +7,8 @@
  */
 import Foundation
 
-aliceMessages
-
+//var aliceMessages
+var aliceMessages = [ "Caterpillar","Dormous","CheshireCat"]
 
 /*:
  The Caterpillar has asked you to go through the messages and to relay any that contain the Caterpillar's name. Instead of reading all the text yourself, you decide to write more code to help.
@@ -22,8 +22,11 @@ If the message refers to the Caterpillar, print it to the console.
  The `contains` method is part of the `Foundation` framework that you read about in the “Types” playground. If you try using it and get an error saying “Value of type 'String' has no member 'contains',” follow the instructions from that playground to import the framework into your project.
  */
 // Write the `for…in` loop here:
-
-
+for message in aliceMessages {
+    if message == "Caterpillar" {
+        print(message)
+    }
+}
 /*:
  
  _Copyright © 2017 Apple Inc._

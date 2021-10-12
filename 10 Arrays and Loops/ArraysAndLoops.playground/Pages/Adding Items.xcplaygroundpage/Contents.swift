@@ -13,9 +13,11 @@ list.insert("Kumquat", at: 0)
 //: You can append a whole array of items using the compound assignment operator `+=`:
 list += ["Strawberry", "Plum", "Watermelon"]
 //: - experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
-
-
-
+var array = [String]()
+array.append("Ahlam")
+array.insert("Abdullah",at: 1)
+array += ["Strawberry", "Plum", "Watermelon"]
+// insert because it arranges array 
 
 
 
