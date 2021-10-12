@@ -14,9 +14,13 @@ list.insert("Kumquat", at: 0)
 list += ["Strawberry", "Plum", "Watermelon"]
 //: - experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
 
+list.insert("Apple",at: 4)
+list.append("mango")
+list += ["kiwi"]
 
 
 
+print(list)
 
 
 

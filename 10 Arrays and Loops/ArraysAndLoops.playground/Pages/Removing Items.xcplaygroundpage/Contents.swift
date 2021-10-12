@@ -10,6 +10,7 @@ var numbers = [0,1,2,3,4]
  The `remove(at:)` method returns the item you have removed:
 */
 let someNumber = numbers.remove(at: 2)
+numbers.remove(at: 2)
 numbers
 //: You can remove the first item using `removeFirst()`:
 let firstNumber = numbers.removeFirst()

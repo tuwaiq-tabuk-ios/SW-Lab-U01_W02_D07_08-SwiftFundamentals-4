@@ -9,17 +9,23 @@
  Create an empty array to hold song titles as strings, and use the `append` method to add three or four songs one at a time.
  */
 
+var songTitls=[String]()
 
 
+songTitls.append("fistSong")
+songTitls.append("socendSong")
+songTitls.append("thirdSong")
 
+print(songTitls)
 /*:
  - callout(Exercise):
  One enthusiastic singer wants to add three songs at once. Create an array holding this one singer's song list and use the `+=` operator to append their whole list to the end of the group's song list.
  */
 
 
+songTitls += ["furthtSong","fifthsong,sixthsong" ]
 
-
+print(songTitls)
 
 /*:
  - callout(Exercise):
@@ -27,6 +33,11 @@
  */
 
 
+
+for so in songTitls{
+    
+  print ("you can do it : \(so) ")
+}
 
 
 
@@ -37,6 +48,6 @@
  */
 
 
-
-
+songTitls.removeAll()
+print (songTitls)
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
