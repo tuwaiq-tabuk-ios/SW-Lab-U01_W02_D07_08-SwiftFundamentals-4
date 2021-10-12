@@ -26,3 +26,17 @@ var anotherGrade = grades[1]
 
 //: Next, learn how to work through the values in an array.\
 //: [Previous](@previous)  |  page 5 of 17  |  [Next: Processing Arrays](@next)
+//Exercise1
+ /*Option-click on the two arrays below and look at their types
+ grades: [String]
+starRatings : [int]*/
+
+//Exercise2
+/*What is the type of grades? What is the type of starRatings?
+ someGrade: [String]
+ someRating: [Int]*/
+
+//Exercise3
+
+//var anotherGrade = grades[6]
+

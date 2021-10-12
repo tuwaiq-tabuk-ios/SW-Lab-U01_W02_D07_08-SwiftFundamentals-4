@@ -23,7 +23,11 @@ If the message refers to the Caterpillar, print it to the console.
  */
 // Write the `for…in` loop here:
 
-
+for massgae in aliceMessages {
+    if massgae.contains("Caterpillar") {
+        print(massgae)
+    }
+}
 /*:
  
  _Copyright © 2017 Apple Inc._
