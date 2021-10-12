@@ -31,3 +31,21 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+// Experiment 1
+var flavors2 = flavors
+flavors2[3] = "Mint Chocolate Chip"
+flavors2
+
+// Experiment 2
+
+flavors[1] = "Maple Walnut"
+
+/*
+ what’s the highest number you can set the subscript to without receiving an error?
+    number 4
+ 
+ Why is that the highest number you can use?
+  becuses this number is last index of object in array 
+ */
+
+

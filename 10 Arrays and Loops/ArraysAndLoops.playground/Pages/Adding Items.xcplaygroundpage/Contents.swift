@@ -14,11 +14,24 @@ list.insert("Kumquat", at: 0)
 list += ["Strawberry", "Plum", "Watermelon"]
 //: - experiment: Practice adding items to the list using each of the three methods. Which do you prefer? When might you want to use each one?
 
-
-
-
-
-
-
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+// Experiment 1
+list.append("Apple")
+list.insert("Orange", at: 1)
+list += ["Lemon", "Cherry", "mango"]
+
+/*
+
+ Which do you prefer?
+ append
+ 
+ When might you want to use each one?
+ 
+ append if i want to add after last index
+ 
+ insert if i want to add at index
+ 
+ + if i want to add array to my array
+ 
+*/

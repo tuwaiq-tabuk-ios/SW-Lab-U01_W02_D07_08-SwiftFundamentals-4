@@ -30,3 +30,8 @@ print("Done, all friends have been invited.")
 //friend
 //: Next, make arrays that can change.\
 //: [Previous](@previous)  |  page 7 of 17  |  [Next: Mutable Arrays](@next)
+// Experiment 1
+/*
+Will it return an error?
+ Yes it return an error
+*/
