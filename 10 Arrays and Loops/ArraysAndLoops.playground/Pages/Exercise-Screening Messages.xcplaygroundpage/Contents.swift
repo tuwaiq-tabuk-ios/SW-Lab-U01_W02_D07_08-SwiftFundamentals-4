@@ -5,11 +5,11 @@
  
  Try to print out the `aliceMessages` array to see the whole list, but beware: It's large enough that it may cause your playground to run slowly.
  */
-import Foundation
 
-aliceMessages
+    import Foundation
 
-
+//aliceMessages
+var aliceMessages = [ "Caterpillar","Dormous","CheshireCat" ]
 /*:
  The Caterpillar has asked you to go through the messages and to relay any that contain the Caterpillar's name. Instead of reading all the text yourself, you decide to write more code to help.
  
@@ -22,7 +22,11 @@ If the message refers to the Caterpillar, print it to the console.
  The `contains` method is part of the `Foundation` framework that you read about in the “Types” playground. If you try using it and get an error saying “Value of type 'String' has no member 'contains',” follow the instructions from that playground to import the framework into your project.
  */
 // Write the `for…in` loop here:
-
+for message in aliceMessages { if message == "Caterpillar"
+ { print(message)
+}
+    
+}
 
 /*:
  
@@ -35,3 +39,4 @@ If the message refers to the Caterpillar, print it to the console.
  _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
  */
 //: [Previous](@previous)  |  page 17 of 17
+
