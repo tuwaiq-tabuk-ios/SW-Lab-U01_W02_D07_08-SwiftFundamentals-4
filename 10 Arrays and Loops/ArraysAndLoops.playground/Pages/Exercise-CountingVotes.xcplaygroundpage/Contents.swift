@@ -19,8 +19,10 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
 
-//: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
+   
 
+
+//: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
 
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
@@ -29,7 +31,8 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
-
+// shouldMascotChangeVotes
+// 125 votes won
 
 
 
@@ -52,3 +55,36 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 
 //: [Previous](@previous)  |  page 15 of 17  |  [Next: Exercise: Goals](@next)
+func countVotes (nameOfArray:[Bool])->( accept: Int, unaccept: Int){
+var countYes = 0
+var countNo = 0
+for conut in nameOfArray {
+    if (conut == true){
+        countYes+=1
+    }
+    else{
+        countNo+=1
+    }
+}
+    return (countNo,countYes)
+}
+func compareVotes(numberofYes: Int, numberOfNo: Int){
+    if (numberOfNo>numberofYes){
+        print("The majority vote to No")
+    }
+    else if (numberOfNo<numberofYes){
+print("The majority vote to Yes")
+        }
+    else{
+        print("the number of votes of are equal")
+    }
+}
+
+let (noVotesCount, yesVotesCount) = countVotes(nameOfArray: shouldMascotChangeVotes) //
+print("Should we change the mascot?", "yes:", yesVotesCount, "no:" , noVotesCount)
+compareVotes(numberofYes: yesVotesCount, numberOfNo: noVotesCount)
+let (noVotesCount1, yesVotesCount1) = countVotes(nameOfArray:shouldHaveMorePollOptionsVotes)//
+print("Should we install coffee vending machine?", "yes:", yesVotesCount1)
+let (noVotesCount2, yesVotesCount2) = countVotes(nameOfArray:shouldHaveMorePollOptionsVotes)//
+print("Should we have more poll option?", "yes:", yesVotesCount2, "no: ", noVotesCount2)
+compareVotes(numberofYes: yesVotesCount2, numberOfNo: noVotesCount2)

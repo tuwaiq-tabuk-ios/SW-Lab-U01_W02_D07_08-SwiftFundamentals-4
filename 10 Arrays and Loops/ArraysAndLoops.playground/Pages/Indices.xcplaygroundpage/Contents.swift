@@ -28,3 +28,7 @@ devices[0]
 
 //: Next find out how many values an array contains.\
 //: [Previous](@previous)  |  page 3 of 17  |  [Next: Count](@next)
+print("\n\n- - - - - Exercice1 - - - - -")
+let favoriteDevice = devices[2]
+print("\n\n- - - - - Exercice2 - - - - -")
+//devices[4]

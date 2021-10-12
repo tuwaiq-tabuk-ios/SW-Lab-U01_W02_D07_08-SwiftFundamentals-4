@@ -40,3 +40,21 @@
 
 
 //: [Previous](@previous)  |  page 14 of 17  |  [Next: Exercise: Counting Votes](@next)
+print("\n\n- - - - - Exercice1 - - - - -")
+ var songsList = [String] ()
+songsList.append("Hello")
+songsList.append("Better Now")
+songsList.append("Sicko mode")
+
+
+print("\n\n- - - - - Exercice2 - - - - -")
+songsList += ["Shallow","Ilike it","Fefe"]
+
+print("\n\n- - - - - Exercice3 - - - - -")
+for songsList in songsList {
+      print("it's your turn \(songsList)")
+}
+
+
+print("\n\n- - - - - Exercice4 - - - - -")
+songsList.removeAll()
