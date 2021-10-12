@@ -31,3 +31,10 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+
+print("\n\n- - - - - Exercice1 - - - - -")
+flavors[3] = "Mint Chocolate Chip"
+print(flavors)
+
+print("\n\n- - - - - Exercice2 - - - - -")
+//Because four is the last number in the array

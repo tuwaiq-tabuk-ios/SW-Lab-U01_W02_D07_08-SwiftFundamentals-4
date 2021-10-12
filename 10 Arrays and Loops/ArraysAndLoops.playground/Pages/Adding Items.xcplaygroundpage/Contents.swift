@@ -22,3 +22,14 @@ list += ["Strawberry", "Plum", "Watermelon"]
 
 //: Move on to find out how to remove items from an array.\
 //: [Previous](@previous)  |  page 9 of 17  |  [Next: Removing Items](@next)
+
+print("\n\n- - - - - Exercice1 - - - - -")
+list.append("apple")
+
+list.insert("graps", at: 3)
+
+list += ["orange", "cocont", "kiwi"]
+//all method
+// append to adding items
+//insert to adding in index
+//+= add array on array

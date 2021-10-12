@@ -28,3 +28,4 @@ let devices = ["iPhone", "iPad", "iPod", "iMac"]
  
 [Previous](@previous)  |  page 2 of 17  |  [Next: Indices](@next)
 */
+let devices1 = [ "iPad","iPhone", "iMac","iPod",]
