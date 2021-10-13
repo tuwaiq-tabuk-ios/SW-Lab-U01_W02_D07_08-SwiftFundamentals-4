@@ -10,17 +10,23 @@ var numbers = [0,1,2,3,4]
  The `remove(at:)` method returns the item you have removed:
 */
 let someNumber = numbers.remove(at: 2)
-numbers
+//numbers
 //: You can remove the first item using `removeFirst()`:
 let firstNumber = numbers.removeFirst()
-numbers
+//numbers
 //: You can remove the last item using `removeLast()`:
 let lastNumber = numbers.removeLast()
-numbers
+//numbers
 //: > Using `removeFirst()` or `removeLast()` on an empty array will cause an error.
 //: You can remove _everything_ using `removeAll()` - this doesn't return anything:
 numbers.removeAll()
-numbers
+//numbers
 
 //: Next learn about replacing items in a mutable array.\
 //: [Previous](@previous)  |  page 10 of 17  |  [Next: Replacing Items](@next)
+var numbers1 = [0,1,2,3,4]
+numbers1.removeAll()
+
+var numbers2 = [0,1,2,3,4]
+ numbers2.remove(at: 2)
+
