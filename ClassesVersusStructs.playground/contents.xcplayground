@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Classes 1'/>
+        <page name='Structs 1'/>
+        <page name='Classes 2'/>
+        <page name='structs 2'/>
+        <page name='classes 3'/>
+        <page name='Structs 3'/>
+        <page name='Classes 4'/>
+        <page name='Structs 4'/>
+        <page name='Classes 5'/>
+        <page name='Structs 5'/>
+        <page name='Structs 6'/>
+    </pages>
+</playground>
