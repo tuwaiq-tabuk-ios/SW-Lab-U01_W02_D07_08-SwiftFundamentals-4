@@ -31,3 +31,6 @@ flavors[1] = "Maple Walnut"
 
 //: Next, review what you’ve learned.\
 //: [Previous](@previous)  |  page 11 of 17  |  [Next: Wrapup](@next)
+flavors[4]
+
+//the largest number that can be used is 4 because the last number is 4
