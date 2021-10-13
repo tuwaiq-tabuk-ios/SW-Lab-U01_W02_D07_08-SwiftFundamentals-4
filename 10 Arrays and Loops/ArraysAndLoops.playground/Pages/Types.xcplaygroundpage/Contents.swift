@@ -26,3 +26,7 @@ var anotherGrade = grades[1]
 
 //: Next, learn how to work through the values in an array.\
 //: [Previous](@previous)  |  page 5 of 17  |  [Next: Processing Arrays](@next)
+// What is the type of grades? What is the type of starRatings?
+//let SomeGrade = grades[0] "string"
+//let SomeRating = starRatings[0] Int
+
