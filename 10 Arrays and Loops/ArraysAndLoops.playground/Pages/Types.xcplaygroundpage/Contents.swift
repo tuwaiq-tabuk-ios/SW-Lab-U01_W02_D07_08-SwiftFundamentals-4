@@ -16,12 +16,17 @@ let starRatings = [1, 2, 3, 4, 5]
  
  - callout(Exercise): What is the type of `grades`? What is the type of `starRatings`?
 */
+// the type of( grades) is string and (starRatings) is integer
+
 let someGrade = grades[0]
 let someRating = starRatings[0]
 //: Since arrays always know what kind of element they're holding, you can pull out a single element from that collection and rely on type inference to establish that `someGrade` is a `String` and `someRating` is an `Int`.
 //:
 //: - callout(Exercise): Try setting `anotherGrade` to a number. What happens?
-var anotherGrade = grades[1]
+var anotherGrade  = grades[1]
+anotherGrade = 2
+//Cannot assign value of type 'Int' to type 'String' reason  is we can't  because this variable is already set of type string
+
 
 
 //: Next, learn how to work through the values in an array.\

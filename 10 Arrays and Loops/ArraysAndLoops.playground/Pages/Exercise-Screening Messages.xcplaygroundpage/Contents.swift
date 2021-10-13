@@ -23,6 +23,11 @@ If the message refers to the Caterpillar, print it to the console.
  */
 // Write the `for…in` loop here:
 
+for massage in  aliceMessages {
+  if massage.contains("Caterpillar"){
+    print(massage)
+  }
+}
 
 /*:
  
