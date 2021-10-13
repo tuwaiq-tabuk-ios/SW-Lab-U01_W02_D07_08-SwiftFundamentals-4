@@ -18,19 +18,78 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
-
+var CountYes1 = 0
+var CountNo1 = 0
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
+var CountYes = 0
+var CountNo = 0
 
-
+for vote  in  shouldHaveMorePollOptionsVotes {
+  if vote == true
+  {
+      CountYes += 1
+    
+  } else {
+  CountNo += 1
+  }
+}
+ 
+print(CountYes)
+print(CountNo)
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
 
 
 
+  if CountYes > CountNo {
+    print(" you are based ")
+  }
+  else {
+    print(" you are failed ")
+  }
+
+
+
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
+for vote  in  shouldMascotChangeVotes {
+  if vote == true
+  {
+      CountYes += 1
+    
+  } else {
+  CountNo += 1
+  }
+}
+ 
+print(CountYes)
+print(CountNo)
 
+if CountYes > CountNo {
+  print(" you are based ")
+}
+else {
+  print(" you are failed ")
+}
+for vote  in  shouldInstallCoffeeVendingMachineVotes{
+  if vote == true
+  {
+      CountYes += 1
+    
+  } else {
+  CountNo += 1
+  }
+}
+ 
+print(CountYes)
+print(CountNo)
 
+if CountYes > CountNo {
+  print(" you are based ")
+}
+else {
+  print(" you are failed ")
+}
 
 
 /*:
@@ -45,6 +104,23 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
  `Should we change the mascot? 54 yes, 23 no`
  */
 // Add your vote-processing function here:
+func printResults(forIssue:String , withVotes:Bool){
+  for vote  in  shouldHaveMorePollOptionsVotes{
+    if vote == true
+    {
+        CountYes += 1
+      
+    } else {
+        CountNo += 1
+    }
+    
+  }
+    print ("\(forIssue) \(CountYes) yes ,\(CountNo) no ")
+    
+
+  printResults(forIssue: "Should we change the mascot?", withVotes:shouldMascotChangeVotes )
+  
+}
 
 
 
